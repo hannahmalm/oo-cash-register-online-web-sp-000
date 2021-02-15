@@ -22,6 +22,7 @@ class CashRegister
     end 
     #create a way to define the prior total before adding in the item 
     @prior_total = @total 
+    #create the current total by ADDING to the prior total, add price * quantity
     @total += price * quantity
   end   
   
