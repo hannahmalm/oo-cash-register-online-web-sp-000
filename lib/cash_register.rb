@@ -41,6 +41,7 @@ class CashRegister
     end   
   end   
  
+ #convert the current total to the previous total 
   def void_last_transaction
      @total = @prior_total 
   end 
