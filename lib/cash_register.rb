@@ -33,6 +33,7 @@ class CashRegister
     #.to_f = to float 
     #.to_i = to int - after the equation is done transform it into an integer 
       @total -= (@total * @discount.to_f / 100).to_i
+      #if the discount is not 0 (aka, there is a discount), write out the discount total 
      if discount != 0
       "After the discount, the total comes to $#{@total}."
     else 
