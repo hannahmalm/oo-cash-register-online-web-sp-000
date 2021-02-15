@@ -31,7 +31,7 @@ class CashRegister
     #take the current total and subtract the disount equation
     #discount equation = (total x discount % / 100)
     #.to_f = to float 
-    #.to_i = to int 
+    #.to_i = to int - after the equation is done transform it into an integer 
       @total -= (@total * @discount.to_f / 100).to_i
      if discount != 0
       "After the discount, the total comes to $#{@total}."
